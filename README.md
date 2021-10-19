@@ -38,7 +38,7 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 </p>                                                      
   
 ## Theory and fundamental concepts
-dfdfdf
+
  
 ## Prelayout Implementation & simulation
 ## 1. Setting up linux environment
@@ -48,6 +48,12 @@ dfdfdf
 </p>  
 
 ## 2.Advantage of dual boot or native linux machine
+
+![Screenshot (3313)](https://user-images.githubusercontent.com/46894129/137923187-50064596-5d88-434b-97d5-742a625e3b3f.png)
+<p align="center">
+    Fig.3.2. Phase detector terminal  
+</p>  
+
 
 ## Modes of operation of sram 
 

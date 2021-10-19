@@ -7,6 +7,7 @@
   - [PFD and VCO PD](#PFD and VCO PD)
   - [Freq Divider and MUX PD](#Freq Divider and MUX PD)
   - [Final PLL layout and Conclusion](#Final PLL layout and Conclusion)
+  - [Applications learned](#Applications learned)
   - [Author](#author)
   - [Acknowledgements](#acknowledgements)
 
@@ -27,7 +28,7 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 </p>                                                      
   
 ## Theory and fundamental concepts
-### Theory on CMOS implementation transistor sizing and system feedback loop
+### 1. Theory on CMOS implementation transistor sizing and system feedback loop
 Phase lock loop is a feedback system that generates the signal whose frequency is proportional
 to the frequency of the input signal, frequency divider in feedback loop is essentially to obtain
 the multiplied frequency as an output of the PLL.
@@ -36,6 +37,10 @@ phases, which is achieved by a phase detector. This block compares the input sig
 that of the output, by using simple exclusive OR(XOR) gate. XOR gate generates the pulse
 whose width that varies with the phase difference between the two signals as in Fig.2.1.
 
+![Screenshot (3371)](https://user-images.githubusercontent.com/46894129/137937756-d3895db4-599e-4d3a-b93a-eb1e3a8b7979.png)
+<p align="center">
+    Fig.2.1. Basics for PLL understanding 
+</p>  
 
 
 In addition to the basic PLL, a charge-pump based PLL uses a charge pump between the phase detector(PFD) and
@@ -47,22 +52,33 @@ Thus always keeping either of the switches on but never on simultaneously switch
 capacitor and 2 discharges so voltage change across capacitor determine the phase difference
 generated which is shown in Fig.2.2.
 
+![Screenshot (3372)](https://user-images.githubusercontent.com/46894129/137937870-94b19b37-4578-4d87-ac24-e11e637c2e4d.png)
 
+<p align="center">
+    Fig.2.1. Basics of inverter for charge pump
+</p>  
 Low pass filter suppress the higher frequency signal and passes signal to Voltage Controlled Os-
 cillator(VCO) in order to match the output frequency of the system with input frequency. The
 basic VCO is constructed using mosfet, Op-amp, resistors and capacitors in our case it is inverter like structure with power fets.
-###  Theory - ic fab process
-###  Theory - ic fab process2
-###  Theory - euler path
+
+### 2.Theory - ic fab process
+
+Complementary Symmetry MOS ICs (COS/MOS) involves both a p-channel and an n-channel MOSFET fabricated on the same chip.
+Capacitors may be obtained by utilising the p-n junctions in transistor type structures or the MOS capacitive effects employing the silicon-dioxide layer. 
+### 3.Theory - euler path
+ Eulerian trail is a trail in a finite graph that visits every edge exactly once. Used to make layout compact and use less metals. 
  
 ## Prelayout Implementation & simulation
 ### 1. Setting up linux environment
+Remotespark online linux environment with pre installed tools was used for simulations of On-chip-clock-multiplier-PLL-using-OSU-180nm-PDK.
 ![Screenshot (3307) width="100"  ](https://user-images.githubusercontent.com/46894129/137920499-9740a17f-a0fa-40fd-8c22-c6b295cd2662.png)
 <p align="center">
     Fig.3.1. github repository download
 </p>  
 
-## 2.Advantage of dual boot or native linux machine
+### 2. Phase detector
+PFD compares the phase and frequency between input and output signal and produces the pulse. Width of the pulse depends on the 
+phase difference between input and output signals.
 
 ![Screenshot (3313)](https://user-images.githubusercontent.com/46894129/137923187-50064596-5d88-434b-97d5-742a625e3b3f.png)
 <p align="center">
@@ -73,6 +89,15 @@ basic VCO is constructed using mosfet, Op-amp, resistors and capacitors in our c
 <p align="center">
     Fig.3.3. Phase detector simulation  
 </p>  
+
+### 2. Charge pump
+The output of PFD further passed through the charge pump. The outputs of the PFD are connected to the switches. The current reference
+is designed and connected to the switches of the charge pump. When the output of upper input is high switch 1 will be closed and when the output of the lower 
+upper input is low switch 2 will be closed.The output of the charge pump is taken from the connection between the
+two switches. The output of the charge pump is connected to the low psas filter(LPF). A basic
+RC circuit is used as LPF. When the switch 1 is closed, capacitor present in the LPF charges
+and when the switch 2 is closed, the capacitor discharges. Here the switches are nothing but inverter topology witj power fets which have large W/L.
+This suppress the high frequency components of PFD and provides the DC level to the VCO.
 
 ![Screenshot (3324)](https://user-images.githubusercontent.com/46894129/137924894-8406fe00-ccf6-41f5-8db1-d8204913a268.png)
 <p align="center">
@@ -89,72 +114,111 @@ basic VCO is constructed using mosfet, Op-amp, resistors and capacitors in our c
     Fig.3.6. Charge pump simulation with Low pass filter 
 </p>  
 
+
+### 3. Voltage controlled oscillator
+After PFD and Charge pump provides the DC level to the VCO.
+The VCO produces the replicas of frequency and phase of the error signal generated by the phase
+detector. The frequency of an oscillator is inversely proportional to the delay introduced by each
+stage. It is therefore possible to navigate the frequency by controlling the amount of current
+available at the charging and discharging load of each stage. Specifically this type of circuit is
+known as the current starved VCO. There are certain assets of choosing this architecture over
+the other VCOs, this architecture reduces the number of jitter produced at the output of PLL.
+
+A delay element of stacked inverter-based ring oscillator comprises of three inverters stacked. 
+This improves the delay in every single stage and enhances the gain of the each
+block. A odd number of stacked inverters are cascaded to work as an oscillator. The output
+voltage swing depends on charging and discharging of the current. In this design, the leakage
+current is minimum. Thus it helps to increase the voltage swing and also reduces the power
+consumption. Appreciable results can be achieved for a low supply voltage with this design.
+
 ![Screenshot (3368)](https://user-images.githubusercontent.com/46894129/137927119-2712b306-ead1-4a71-a4ea-f14ba0eaf783.png)
 <p align="center">
-    Fig.3.4. Voltage controlled oscillator terminal
+    Fig.3.7. Voltage controlled oscillator terminal
 </p>  
 
 ![Screenshot (3329)](https://user-images.githubusercontent.com/46894129/137927881-9bc0d4c6-30aa-4ad0-b312-ccfa5f6eca06.png)
 <p align="center">
-    Fig.3.5. Voltage controlled oscillator referance as 0.5
+    Fig.3.8. Voltage controlled oscillator referance as 0.5
 </p> 
 
 ![Screenshot (3330)](https://user-images.githubusercontent.com/46894129/137928256-2bbc2b4b-de21-46b6-9812-520f3632f0b1.png)
 <p align="center">
-    Fig.3.6. Voltage controlled oscillator referance as 0.6
+    Fig.3.9. Voltage controlled oscillator referance as 0.6
 </p> 
 
 ![Screenshot (3331)](https://user-images.githubusercontent.com/46894129/137928698-2f551828-e6e7-4952-a1e1-760a41e0ca7a.png)
 <p align="center">
-    Fig.3.7. Voltage controlled oscillator referance as 0.4
+    Fig.3.10. Voltage controlled oscillator referance as 0.4
 </p> 
 
+
+### 4. Frequency divider
+For frequency division, toggle mode generated usin D flip-flops. They are used in a chain as a divide by two counter. One flip-flop will divide the clock, Fin by 2, 
+two flip-flops will divide Fin by 4 (and so on).
+final output of whole feed back loop should be Fin/8 as it has to be compared to orignial input signal of the PLL.
 ![Screenshot (3336)](https://user-images.githubusercontent.com/46894129/137928919-a378612f-2cec-4118-8875-14bd524ec112.png)
 
 <p align="center">
-    Fig.3.7. Frequency division terminal
+    Fig.3.11. Frequency division terminal
 </p> 
 
 ![Screenshot (3335)](https://user-images.githubusercontent.com/46894129/137929077-6ec9add7-5ece-47b6-8fd3-1578af584a65.png)
 
 <p align="center">
-    Fig.3.8. Frequency division simulation
+    Fig.3.12. Frequency division by 2 simulation 
 </p> 
 
+### 5. Phase lock loop
+ The whole On-chip-clock-multiplier-PLL was simulated with integrating all the blocks with corner frequencies of 5Mhz,10Mhz,12.5Mhz.
+ 
 ![Screenshot (3338)](https://user-images.githubusercontent.com/46894129/137929298-6f7cae79-9b6c-455e-83bb-563fafeef605.png)
 <p align="center">
-    Fig.3.7. Phase lock loop terminal
+    Fig.3.13. Phase lock loop terminal
 </p> 
 
 ![Screenshot (3339)](https://user-images.githubusercontent.com/46894129/137929653-28994e28-3420-4c3e-8041-8db72670a43c.png)
 <p align="center">
-    Fig.3.7. Phase lock loop simulation with corner frequency 5Mhz
+    Fig.3.14. Phase lock loop simulation with corner frequency 5Mhz
 </p> 
 
 ![Screenshot (3342)](https://user-images.githubusercontent.com/46894129/137929794-1a0df920-ad06-475f-a766-279f9fc31386.png)
 <p align="center">
-    Fig.3.7. Phase lock loop simulation with corner frequency 10Mhz
+    Fig.3.15. Phase lock loop simulation with corner frequency 10Mhz
 </p> 
 
 ![Screenshot (3343)](https://user-images.githubusercontent.com/46894129/137929981-58798c9a-be3e-483f-8e3e-06ba9cac69ae.png)
 <p align="center">
-    Fig.3.7. Phase lock loop simulation with corner frequency 2.5Mhz
+    Fig.3.16. Phase lock loop simulation with corner frequency 12.5Mhz
 </p> 
 
 ![Screenshot (3344)](https://user-images.githubusercontent.com/46894129/137930222-4554b6ae-a663-4f5c-8eba-40417a93f215.png)
 <p align="center">
-    Fig.3.8. Phase lock loop check frequency increment simulation 
+    Fig.3.17. Phase lock loop check frequency increment simulation 
 </p> 
+
+## Applications learned
+
+The phase-locked loop is one of the basic blocks in modern electronic systems. It is generally
+used in multimedia, communication and in many other applications.
+
+- It is used in time to digital converters
+- It is used for Jitter reduction, skew suppression, clock recovery.
+- It is used in frequency shifting decodes for demodulation carrier frequencies.
+- With respect to societal context, A stable on-chip PLL will help in keeping track of time
+accurately. Working on on-chip applications provides better experience in solving real
+world circuit based problems, rather than just designing a circuit for simulations. The
+idea of designing a chip will encourage many institutes to come forward and provide better
+learning to the students.
 
 ## Author
 
- * Penumarthi Aishwarya
+ * Sachin Dalabanjan
  
 ## Acknowledgements
 
   * Kunal Ghosh , Co-founder of VSD Corp.Pvt.ltd
   * Philipp Guhring , Software Architect at LibreSilicon Association
-  * Tim Edwards , Senior Vice President of Analog and Design at eFabless corporstion
+  * Paras Sanjay Gidd, VSD IP Research intern
   
 
 

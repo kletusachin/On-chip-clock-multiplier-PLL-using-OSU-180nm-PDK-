@@ -55,8 +55,9 @@ generated which is shown in Fig.2.2.
 ![Screenshot (3372)](https://user-images.githubusercontent.com/46894129/137937870-94b19b37-4578-4d87-ac24-e11e637c2e4d.png)
 
 <p align="center">
-    Fig.2.1. Basics of inverter for charge pump
+    Fig.2.2. Basics of inverter for charge pump
 </p>  
+
 Low pass filter suppress the higher frequency signal and passes signal to Voltage Controlled Os-
 cillator(VCO) in order to match the output frequency of the system with input frequency. The
 basic VCO is constructed using mosfet, Op-amp, resistors and capacitors in our case it is inverter like structure with power fets.
@@ -65,6 +66,7 @@ basic VCO is constructed using mosfet, Op-amp, resistors and capacitors in our c
 
 Complementary Symmetry MOS ICs (COS/MOS) involves both a p-channel and an n-channel MOSFET fabricated on the same chip.
 Capacitors may be obtained by utilising the p-n junctions in transistor type structures or the MOS capacitive effects employing the silicon-dioxide layer. 
+
 ### 3.Theory - euler path
  Eulerian trail is a trail in a finite graph that visits every edge exactly once. Used to make layout compact and use less metals. 
  
@@ -195,6 +197,17 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 <p align="center">
     Fig.3.17. Phase lock loop check frequency increment simulation 
 </p> 
+
+
+## Final PLL layout and Conclusion
+### 1. Final PLL layout
+The layout is converted to .sp file from .magic for post layout simulations.
+
+### 2. Conclusion 
+The Charge Pump based Phase Locked Loop with frequency was designed for a
+single core. The frequency range pertaining from Fclkin – 5MHz to 12Mhz, Fclkout – 40MHz to 100MHz at 1.8v was achieved
+with a cascaded invertor topplogy based VCO, PFD and frequency divider blocks. The results with physical design implementation were
+appreciable with minimum jitter at the output.
 
 ## Applications learned
 

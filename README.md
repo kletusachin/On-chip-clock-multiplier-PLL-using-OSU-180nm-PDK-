@@ -203,10 +203,31 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 ## Physical Design introduction
 
 ## PFD and VCO PD
+![Screenshot (3381)](https://user-images.githubusercontent.com/46894129/137957167-34d78d0a-ea8a-4bbd-bc77-f69df36ae22d.png)
+Charge p
 ## Freq Divider and MUX PD
 
 ### 1. Final PLL layout
 The layout is converted to .sp file from .magic for post layout simulations.
+![Screenshot (3380)](https://user-images.githubusercontent.com/46894129/137957050-b7de1708-061d-4c5d-9529-46750e193eca.png)
+
+<p align="center">
+    Fig.7.1. Phase lock loop terminal
+</p> 
+
+
+![Screenshot (3383)](https://user-images.githubusercontent.com/46894129/137957319-a8262522-5fe0-482d-9214-46fe305301d8.png)
+
+<p align="center">
+    Fig.7.2. Final Phase lock loop post layout simulation
+</p> 
+
+
+![Screenshot (3382)](https://user-images.githubusercontent.com/46894129/137957248-5e2fc15e-2330-4018-b0f0-de01e2a057f4.png)
+<p align="center">
+    Fig.7.3. Final frequency count post layout simulation
+</p> 
+
 
 ### 2. Conclusion 
 The Charge Pump based Phase Locked Loop with frequency was designed for a

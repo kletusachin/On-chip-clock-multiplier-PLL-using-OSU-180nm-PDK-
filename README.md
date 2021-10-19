@@ -202,17 +202,18 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 </p> 
 
 ## PHYSICAL DESIGN INTRODUCTION
+The physcial design is done using magic tool where the netlist from circuit simulator is dumped. This magic file generated after post layout cannot
+be simulated thus we convert it to spice model to geneate the mos, capacatance which is a readable format. After that we make some modification in 
+spice file by adding active sources for post layout simulation.
 ![Screenshot (3401)](https://user-images.githubusercontent.com/46894129/137963512-e94a081b-947b-48f4-bf16-bb748c689559.png)
 <p align="center">
     Fig.4.1. Inverter layout in magic tool
 </p> 
 
-
 ![Screenshot (3402)](https://user-images.githubusercontent.com/46894129/137963549-8a25fd06-e9cf-4e72-980c-bb651139b230.png)
 <p align="center">
     Fig.4.2. Extraction of files 
 </p> 
-
 
 ![Screenshot (3403)](https://user-images.githubusercontent.com/46894129/137963598-e14d5029-c926-4786-8cbe-5fcf2e935472.png)
 <p align="center">

@@ -282,6 +282,7 @@ Here the ngspice model are simulated and tested with respect to pre layout simul
 ## FINAL PLL LAYOUT AND CONCLUSION
 ### 1. Final PLL layout
 The layout is converted to .sp file from .magic for post layout simulations.
+Finally to conclude the specification were met with significantly matching post and pre layout simulation.
 ![Screenshot (3380)](https://user-images.githubusercontent.com/46894129/137957050-b7de1708-061d-4c5d-9529-46750e193eca.png)
 
 <p align="center">

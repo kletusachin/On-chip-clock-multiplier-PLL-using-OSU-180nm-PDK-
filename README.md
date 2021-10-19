@@ -1,7 +1,7 @@
 # On-chip-clock-multiplier-PLL-using-OSU-180nm-PDK
 
   - [Introduction](#Introduction)
-  - Theory and fundamental concepts
+  - [Theory and fundamental concepts] (#Theory and fundamental concepts)
   - [6T-CELL](#6t-cell)
   - [Modes of operation of sram](#modes-of-operation-of-sram)
     - [**1. Hold mode :**](#1-hold-mode-)
@@ -34,15 +34,17 @@ detector(PFD), charge pump, voltage controlled oscillator(VCO) and frequency
 divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 ![Screenshot (3367)](https://user-images.githubusercontent.com/46894129/137918766-5998746e-355d-4b7c-b8ed-8718bde42a10.png)
 <p align="center">
-    Fig.1.1
+    Fig.1.1. Basic block diagram
 </p>                                                      
   
 ## Theory and fundamental concepts
 
  
 ## 6T-CELL 
-
-<img align="center" width="900"  src="/Circuits/6tsramcell.png">
+![Screenshot (3307) width="100"  ](https://user-images.githubusercontent.com/46894129/137920499-9740a17f-a0fa-40fd-8c22-c6b295cd2662.png)
+<p align="center">
+    Fig.3.1. github repository download
+</p>  
 
 ## Modes of operation of sram 
 

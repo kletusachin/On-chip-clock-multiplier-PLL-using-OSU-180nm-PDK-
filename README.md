@@ -55,7 +55,7 @@ Thus always keeping either of the switches on but never on simultaneously switch
 capacitor and 2 discharges so voltage change across capacitor determine the phase difference
 generated which is shown in Fig.2.2.
  
-  ![Screenshot (3372)](https://user-images.githubusercontent.com/46894129/137937870-94b19b37-4578-4d87-ac24-e11e637c2e4d.png)
+  ![Screenshot (3404)](https://user-images.githubusercontent.com/46894129/137972001-dac75a84-59b2-4527-915b-dbc767fb3bde.png)
 <p align="center">
     Fig.2.2. Basics of inverter for charge pump
 </p>  

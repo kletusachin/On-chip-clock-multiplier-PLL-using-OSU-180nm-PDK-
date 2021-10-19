@@ -1,15 +1,17 @@
 # On-chip-clock-multiplier-PLL-using-OSU-180nm-PDK
+![Screenshot (3375)](https://user-images.githubusercontent.com/46894129/137955077-4b7e1e04-a110-402b-a242-b1411c490cb1.png)
 
-  - [Introduction](#Introduction)                                                         
-  - [Theory and fundamental concepts](#Theory and fundamental concepts)
-  - [Prelayout Implementation & simulation](#Prelayout Implementation & simulation)
-  - [Physical Design introduction](#Physical Design introduction)
-  - [PFD and VCO PD](#PFD and VCO PD)
-  - [Freq Divider and MUX PD](#Freq Divider and MUX PD)
-  - [Final PLL layout and Conclusion](#Final PLL layout and Conclusion)
-  - [Applications learned](#Applications learned)
-  - [Author](#author)
-  - [Acknowledgements](#acknowledgements)
+
+  - Introduction                                                   
+  - Theory and fundamental concepts
+  - Prelayout Implementation & simulation
+  - Physical Design introduction
+  - PFD and VCO PD
+  - Freq Divider and MUX PD
+  - Final PLL layout and Conclusion
+  - Applications learned
+  - Author
+  - Acknowledgements
 
 ## Introduction
 The PLL plays a crucial role in most of the integrated circuits, processor or microcontroller.

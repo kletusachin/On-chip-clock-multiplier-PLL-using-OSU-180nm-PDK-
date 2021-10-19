@@ -5,9 +5,9 @@
   - Introduction                                                  
   - Theory and fundamental concepts
   - Prelayout Implementation & simulation
-  - Physical Design introduction
+  - Physical Design(PD) introduction
   - PFD and VCO PD
-  - Freq Divider and MUX PD
+  - Frequency Divider and MUX PD
   - Final PLL layout and Conclusion
   - Applications learned
   - Author
@@ -201,7 +201,7 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
     Fig.3.17. Phase lock loop check frequency increment simulation 
 </p> 
 
-## PHYSICAL DESIGN INTRODUCTION
+## PHYSICAL DESIGN(PD) INTRODUCTION
 The physcial design is done using magic tool where the netlist from circuit simulator is dumped. This magic file generated after post layout cannot
 be simulated thus we convert it to spice model to geneate the mos, capacatance which is a readable format. After that we make some modification in 
 spice file by adding active sources for post layout simulation.
@@ -255,7 +255,7 @@ Here the ngspice model are simulated and tested with respect to pre layout simul
 </p> 
 
 
-## Freq Divider and MUX PD
+## FREQUENCY DIVIDER AND MUX PD
 ![Screenshot (3394)](https://user-images.githubusercontent.com/46894129/137961294-6891b5e8-08d5-4037-8cdb-34e18bfe45d1.png)
 <p align="center">
     Fig.6.1. Frequency Divider terminal 
@@ -278,7 +278,7 @@ Here the ngspice model are simulated and tested with respect to pre layout simul
 </p> 
 
 
-## Final PLL layout and Conclusion
+## FINAL PLL LAYOUT AND CONCLUSION
 ### 1. Final PLL layout
 The layout is converted to .sp file from .magic for post layout simulations.
 ![Screenshot (3380)](https://user-images.githubusercontent.com/46894129/137957050-b7de1708-061d-4c5d-9529-46750e193eca.png)
@@ -307,7 +307,7 @@ single core. The frequency range pertaining from Fclkin – 5MHz to 12Mhz, Fclko
 with a cascaded invertor topplogy based VCO, PFD and frequency divider blocks. The results with physical design implementation were
 appreciable with minimum jitter at the output.
 
-## Applications learned
+## APPLICATIONS LEARNED
 
 The phase-locked loop is one of the basic blocks in modern electronic systems. It is generally
 used in multimedia, communication and in many other applications.
@@ -321,11 +321,11 @@ world circuit based problems, rather than just designing a circuit for simulatio
 idea of designing a chip will encourage many institutes to come forward and provide better
 learning to the students.
 
-## Author
+## AUTHOR
 
  * Sachin Dalabanjan
  
-## Acknowledgements
+## ACKNOWLEDGEMENTS
 
   * Kunal Ghosh , Co-founder of VSD Corp.Pvt.ltd
   * Philipp Guhring , Software Architect at LibreSilicon Association

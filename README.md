@@ -268,14 +268,16 @@ Here the ngspice model are simulated and tested with respect to pre layout simul
 </p> 
 
 
+
 ![Screenshot (3396)](https://user-images.githubusercontent.com/46894129/137961486-ab981d33-7907-468e-b31c-e568278b740a.png)
 <p align="center">
-    Fig.6.1. MUX terminal 
+    Fig.6.3. MUX terminal 
 </p> 
-
+Select line is toggled in between 0 and 1 to check the MUX output with respect to reference if selectline is 0 then acts as PLL or else 
+its in power on resect mode.
 ![Screenshot (3397)](https://user-images.githubusercontent.com/46894129/137961577-aff27287-1c90-45c5-930b-c9db995b4157.png)
 <p align="center">
-    Fig.6.2. MUX post layout simulation
+    Fig.6.4. MUX post layout simulation
 </p> 
 
 

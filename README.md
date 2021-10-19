@@ -81,7 +81,12 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 
 ![Screenshot (3329)](https://user-images.githubusercontent.com/46894129/137927881-9bc0d4c6-30aa-4ad0-b312-ccfa5f6eca06.png)
 <p align="center">
-    Fig.3.4. Voltage controlled oscillator referance as 0.5
+    Fig.3.5. Voltage controlled oscillator referance as 0.5
+</p> 
+
+![Screenshot (3330)](https://user-images.githubusercontent.com/46894129/137928256-2bbc2b4b-de21-46b6-9812-520f3632f0b1.png)
+<p align="center">
+    Fig.3.6. Voltage controlled oscillator referance as 0.6
 </p> 
 
 

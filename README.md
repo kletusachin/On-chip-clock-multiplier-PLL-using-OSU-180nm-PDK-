@@ -54,6 +54,10 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
     Fig.3.2. Phase detector terminal  
 </p>  
 
+![Screenshot (3314)](https://user-images.githubusercontent.com/46894129/137923951-5675c666-edcf-4b9c-b155-4e813be51782.png)
+<p align="center">
+    Fig.3.2. Phase detector simulation  
+</p>  
 
 ## Modes of operation of sram 
 

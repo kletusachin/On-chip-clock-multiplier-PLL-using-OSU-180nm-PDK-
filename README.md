@@ -13,7 +13,7 @@
   - Author
   - Acknowledgements
 
-## Introduction
+## INTRODUCTION
 The PLL plays a crucial role in most of the integrated circuits, processor or microcontroller.
 The circuit functions to provide a required clock with fixed frequency and phase to the digital
 blocks. It delivers the output frequency that is produced as a result of phase comparison at the
@@ -30,7 +30,7 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
     Fig.1.1. Basic block diagram
 </p>                                                      
   
-## Theory and fundamental concepts
+## THEORY AND FUNDAMENTAL CONCEPTS
 ### 1. Theory on CMOS implementation transistor sizing and system feedback loop
 Phase lock loop is a feedback system that generates the signal whose frequency is proportional
 to the frequency of the input signal, frequency divider in feedback loop is essentially to obtain
@@ -54,9 +54,8 @@ on the values of the input given the switches of the charge pump turn on and off
 Thus always keeping either of the switches on but never on simultaneously switch 1 charges the
 capacitor and 2 discharges so voltage change across capacitor determine the phase difference
 generated which is shown in Fig.2.2.
-
-![Screenshot (3372)](https://user-images.githubusercontent.com/46894129/137937870-94b19b37-4578-4d87-ac24-e11e637c2e4d.png)
-
+ 
+  ![Screenshot (3372)](https://user-images.githubusercontent.com/46894129/137937870-94b19b37-4578-4d87-ac24-e11e637c2e4d.png)
 <p align="center">
     Fig.2.2. Basics of inverter for charge pump
 </p>  
@@ -73,11 +72,11 @@ Capacitors may be obtained by utilising the p-n junctions in transistor type str
 ### 3.Theory - euler path
  Eulerian trail is a trail in a finite graph that visits every edge exactly once. Used to make layout compact and use less metals. 
  
-## Prelayout Implementation & simulation
+## PRELAYOUT IMPLEMENTATION & SIMULATION
 ### 1. Setting up linux environment
 Remotespark online linux environment with pre installed tools was used for simulations of On-chip-clock-multiplier-PLL-using-OSU-180nm-PDK.
 
-![Screenshot (3307) width="100"  ](https://user-images.githubusercontent.com/46894129/137920499-9740a17f-a0fa-40fd-8c22-c6b295cd2662.png)
+![Screenshot (3307) width="100"](https://user-images.githubusercontent.com/46894129/137920499-9740a17f-a0fa-40fd-8c22-c6b295cd2662.png)
 <p align="center">
     Fig.3.1. github repository download
 </p>  
@@ -202,7 +201,7 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
     Fig.3.17. Phase lock loop check frequency increment simulation 
 </p> 
 
-## Physical Design introduction
+## PHYSICAL DESIGN INTRODUCTION
 ![Screenshot (3401)](https://user-images.githubusercontent.com/46894129/137963512-e94a081b-947b-48f4-bf16-bb748c689559.png)
 <p align="center">
     Fig.4.1. Inverter layout in magic tool

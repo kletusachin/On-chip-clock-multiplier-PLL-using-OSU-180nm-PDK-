@@ -205,6 +205,7 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 The physcial design is done using magic tool where the netlist from circuit simulator is dumped. This magic file generated after post layout cannot
 be simulated thus we convert it to spice model to geneate the mos, capacatance which is a readable format. After that we make some modification in 
 spice file by adding active sources for post layout simulation.
+The significance of Lambda rules were applied and shown.
 <br />
 ![Screenshot (3401)](https://user-images.githubusercontent.com/46894129/137963512-e94a081b-947b-48f4-bf16-bb748c689559.png)
 <p align="center">

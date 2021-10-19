@@ -247,12 +247,12 @@ Here the ngspice model are simulated and tested with respect to pre layout simul
 
 ![Screenshot (3387)](https://user-images.githubusercontent.com/46894129/137959101-0dce22d3-8fd6-446f-801f-c22ae30dd562.png)
 <p align="center">
-    Fig.5.4. Voltage controlled oscillator with 0.5 as referance post layout simulation
+    Fig.5.5. Voltage controlled oscillator with 0.5 as referance post layout simulation
 </p> 
 
 ![Screenshot (3389)](https://user-images.githubusercontent.com/46894129/137959148-f351d1dd-a046-463b-b16e-4c674a26ffe7.png)
 <p align="center">
-    Fig.5.4. Voltage controlled oscillator with 0.6 as referance post layout simulation
+    Fig.5.6. Voltage controlled oscillator with 0.6 as referance post layout simulation
 </p> 
 
 
@@ -275,7 +275,9 @@ Here the ngspice model are simulated and tested with respect to pre layout simul
 </p> 
 Select line is toggled in between 0 and 1 to check the MUX output with respect to reference if selectline is 0 then acts as PLL or else 
 its in power on resect mode.
+
 ![Screenshot (3397)](https://user-images.githubusercontent.com/46894129/137961577-aff27287-1c90-45c5-930b-c9db995b4157.png)
+
 <p align="center">
     Fig.6.4. MUX post layout simulation
 </p> 

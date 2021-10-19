@@ -41,7 +41,7 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 
  
 ## Prelayout Implementation & simulation
-## 1. Setting up linux environment
+### 1. Setting up linux environment
 ![Screenshot (3307) width="100"  ](https://user-images.githubusercontent.com/46894129/137920499-9740a17f-a0fa-40fd-8c22-c6b295cd2662.png)
 <p align="center">
     Fig.3.1. github repository download
@@ -58,6 +58,12 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 <p align="center">
     Fig.3.2. Phase detector simulation  
 </p>  
+
+![Screenshot (3324)](https://user-images.githubusercontent.com/46894129/137924894-8406fe00-ccf6-41f5-8db1-d8204913a268.png)
+<p align="center">
+    Fig.3.2. Phase detector with charge pump terminal
+</p>  
+
 
 ## Modes of operation of sram 
 

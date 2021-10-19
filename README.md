@@ -56,17 +56,22 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 
 ![Screenshot (3314)](https://user-images.githubusercontent.com/46894129/137923951-5675c666-edcf-4b9c-b155-4e813be51782.png)
 <p align="center">
-    Fig.3.2. Phase detector simulation  
+    Fig.3.3. Phase detector simulation  
 </p>  
 
 ![Screenshot (3324)](https://user-images.githubusercontent.com/46894129/137924894-8406fe00-ccf6-41f5-8db1-d8204913a268.png)
 <p align="center">
-    Fig.3.2. Phase detector with charge pump terminal
+    Fig.3.4. Phase detector with charge pump terminal
 </p>  
 
 ![Screenshot (3325)](https://user-images.githubusercontent.com/46894129/137925523-cbb54956-ccdb-4822-b33f-a0447fcfe2e6.png)
 <p align="center">
-    Fig.3.2. Charge pump simulation without Low pass filter 
+    Fig.3.5. Charge pump simulation without Low pass filter 
+</p>  
+
+![Screenshot (3323)](https://user-images.githubusercontent.com/46894129/137925909-dc3a3a84-0704-4f60-ab7a-20f3950b4b3c.png)
+<p align="center">
+    Fig.3.6. Charge pump simulation with Low pass filter 
 </p>  
 
 ## Modes of operation of sram 

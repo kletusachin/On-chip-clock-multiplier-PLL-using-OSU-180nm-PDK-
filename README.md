@@ -203,8 +203,37 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 ## Physical Design introduction
 
 ## PFD and VCO PD
+![Screenshot (3357)](https://user-images.githubusercontent.com/46894129/137958158-7b984ed7-68d6-4dd0-8c45-82e33bcbf115.png)
+<p align="center">
+    Fig.5.1. Phase detector and charge pump terminal 
+</p> 
+
+![Screenshot (3358)](https://user-images.githubusercontent.com/46894129/137958230-17835482-26cc-46d4-a2ad-74ce96d9064f.png)
+<p align="center">
+    Fig.5.2. Phase detector post layout simulation
+</p> 
+
 ![Screenshot (3381)](https://user-images.githubusercontent.com/46894129/137957167-34d78d0a-ea8a-4bbd-bc77-f69df36ae22d.png)
-Charge p
+<p align="center">
+    Fig.5.3. Charge pump post layout simulation
+</p> 
+
+![Screenshot (3360)](https://user-images.githubusercontent.com/46894129/137958308-b6cd0c75-0b10-440f-ab07-c554cfc683c9.png)
+<p align="center">
+    Fig.5.4. Voltage controlled oscillator terminal 
+</p> 
+
+![Screenshot (3387)](https://user-images.githubusercontent.com/46894129/137959101-0dce22d3-8fd6-446f-801f-c22ae30dd562.png)
+<p align="center">
+    Fig.5.4. Voltage controlled oscillator with 0.5 as referance post layout simulation
+</p> 
+
+![Screenshot (3389)](https://user-images.githubusercontent.com/46894129/137959148-f351d1dd-a046-463b-b16e-4c674a26ffe7.png)
+<p align="center">
+    Fig.5.4. Voltage controlled oscillator with 0.6 as referance post layout simulation
+</p> 
+
+
 ## Freq Divider and MUX PD
 
 ### 1. Final PLL layout

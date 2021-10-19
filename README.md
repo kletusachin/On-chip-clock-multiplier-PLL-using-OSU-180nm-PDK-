@@ -75,6 +75,7 @@ Capacitors may be obtained by utilising the p-n junctions in transistor type str
 ## Prelayout Implementation & simulation
 ### 1. Setting up linux environment
 Remotespark online linux environment with pre installed tools was used for simulations of On-chip-clock-multiplier-PLL-using-OSU-180nm-PDK.
+
 ![Screenshot (3307) width="100"  ](https://user-images.githubusercontent.com/46894129/137920499-9740a17f-a0fa-40fd-8c22-c6b295cd2662.png)
 <p align="center">
     Fig.3.1. github repository download
@@ -236,6 +237,7 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 
 ## Freq Divider and MUX PD
 
+## Final PLL layout and Conclusion
 ### 1. Final PLL layout
 The layout is converted to .sp file from .magic for post layout simulations.
 ![Screenshot (3380)](https://user-images.githubusercontent.com/46894129/137957050-b7de1708-061d-4c5d-9529-46750e193eca.png)

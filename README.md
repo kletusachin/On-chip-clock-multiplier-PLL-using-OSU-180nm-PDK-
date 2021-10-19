@@ -236,6 +236,27 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 
 
 ## Freq Divider and MUX PD
+![Screenshot (3394)](https://user-images.githubusercontent.com/46894129/137961294-6891b5e8-08d5-4037-8cdb-34e18bfe45d1.png)
+<p align="center">
+    Fig.6.1. Frequency Divider terminal 
+</p> 
+
+![Screenshot (3395)](https://user-images.githubusercontent.com/46894129/137961403-85c0348a-bbe3-4754-936d-0f54e1f2f5ed.png)
+<p align="center">
+    Fig.6.2. Frequency Divider post layout simulation
+</p> 
+
+
+![Screenshot (3396)](https://user-images.githubusercontent.com/46894129/137961486-ab981d33-7907-468e-b31c-e568278b740a.png)
+<p align="center">
+    Fig.6.1. MUX terminal 
+</p> 
+
+![Screenshot (3397)](https://user-images.githubusercontent.com/46894129/137961577-aff27287-1c90-45c5-930b-c9db995b4157.png)
+<p align="center">
+    Fig.6.2. MUX post layout simulation
+</p> 
+
 
 ## Final PLL layout and Conclusion
 ### 1. Final PLL layout

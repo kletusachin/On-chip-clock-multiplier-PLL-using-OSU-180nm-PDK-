@@ -79,6 +79,12 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
     Fig.3.4. Voltage controlled oscillator terminal
 </p>  
 
+![Screenshot (3329)](https://user-images.githubusercontent.com/46894129/137927881-9bc0d4c6-30aa-4ad0-b312-ccfa5f6eca06.png)
+<p align="center">
+    Fig.3.4. Voltage controlled oscillator referance as 0.5
+</p> 
+
+
 ## Modes of operation of sram 
 
 ### **1. Hold mode :** 

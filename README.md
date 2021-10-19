@@ -198,8 +198,11 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
     Fig.3.17. Phase lock loop check frequency increment simulation 
 </p> 
 
+## Physical Design introduction
 
-## Final PLL layout and Conclusion
+## PFD and VCO PD
+## Freq Divider and MUX PD
+
 ### 1. Final PLL layout
 The layout is converted to .sp file from .magic for post layout simulations.
 

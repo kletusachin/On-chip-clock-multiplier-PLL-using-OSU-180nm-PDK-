@@ -1,8 +1,8 @@
 # On-chip-clock-multiplier-PLL-using-OSU-180nm-PDK
 
   - [Introduction](#Introduction)
-  - [Theory and fundamental concepts] (#Theory and fundamental concepts)
-  - [6T-CELL](#6t-cell)
+  - [Theory and fundamental concepts](#Theory and fundamental concepts)
+  - [Prelayout Implementation & simulation](#Prelayout Implementation & simulation)
   - [Modes of operation of sram](#modes-of-operation-of-sram)
     - [**1. Hold mode :**](#1-hold-mode-)
     - [**2. Read mode :**](#2-read-mode-)
@@ -38,13 +38,16 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
 </p>                                                      
   
 ## Theory and fundamental concepts
-
+dfdfdf
  
-## 6T-CELL 
+## Prelayout Implementation & simulation
+## 1. Setting up linux environment
 ![Screenshot (3307) width="100"  ](https://user-images.githubusercontent.com/46894129/137920499-9740a17f-a0fa-40fd-8c22-c6b295cd2662.png)
 <p align="center">
     Fig.3.1. github repository download
 </p>  
+
+## 2.Advantage of dual boot or native linux machine
 
 ## Modes of operation of sram 
 

@@ -202,6 +202,23 @@ final output of whole feed back loop should be Fin/8 as it has to be compared to
 </p> 
 
 ## Physical Design introduction
+![Screenshot (3401)](https://user-images.githubusercontent.com/46894129/137963512-e94a081b-947b-48f4-bf16-bb748c689559.png)
+<p align="center">
+    Fig.4.1. Inverter layout in magic tool
+</p> 
+
+
+![Screenshot (3402)](https://user-images.githubusercontent.com/46894129/137963549-8a25fd06-e9cf-4e72-980c-bb651139b230.png)
+<p align="center">
+    Fig.4.2. Extraction of files 
+</p> 
+
+
+![Screenshot (3403)](https://user-images.githubusercontent.com/46894129/137963598-e14d5029-c926-4786-8cbe-5fcf2e935472.png)
+<p align="center">
+    Fig.4.3. Extracted spice file need sources for post laypot simulation
+</p> 
+
 
 ## PFD and VCO PD
 ![Screenshot (3357)](https://user-images.githubusercontent.com/46894129/137958158-7b984ed7-68d6-4dd0-8c45-82e33bcbf115.png)

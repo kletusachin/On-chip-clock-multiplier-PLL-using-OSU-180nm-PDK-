@@ -74,6 +74,11 @@ divider(FD). Fig.1.1 shows the basic block diagram if PLL.
     Fig.3.6. Charge pump simulation with Low pass filter 
 </p>  
 
+![Screenshot (3368)](https://user-images.githubusercontent.com/46894129/137927119-2712b306-ead1-4a71-a4ea-f14ba0eaf783.png)
+<p align="center">
+    Fig.3.4. Voltage controlled oscillator terminal
+</p>  
+
 ## Modes of operation of sram 
 
 ### **1. Hold mode :** 
